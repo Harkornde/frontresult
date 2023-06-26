@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Hanken Grotesk;
+}
+/* body {
+  width: 375px;
+} */
+p {
+  font-size: 1rem;
+  color: #9997ec;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.mobile_upper_part {
+  /* width: 100vw; */
+  height: 15rem;
+  color: hsl(0, 0%, 100%);
+  background: linear-gradient(#6742ff, #342dea);
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.mobile_upper_part > h4 {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.mobile_circle {
+  width: 6.25rem;
+  height: 6.25rem;
+  background: linear-gradient(#4a25cf, #4632f0);
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 100%;
+}
+
+.mobile_circle > h3 {
+  font-size: 2.8rem;
+  display: inline-block;
+  margin-top: 0.625rem;
+}
+
+.great {
+  margin: 0.625rem;
+}
+
+.summary {
+  margin-left: 2.25rem;
+  margin-top: 1rem;
+}
+
+.score_statement {
+  font-size: 0.8rem;
+}
+
+.criteria {
+  width: 80%;
+  margin: 1.25rem auto;
+  height: 3rem;
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.criteria > img {
+  width: 24px;
+  margin-left: -15px;
+}
+
+.criteria > h {
+  display: block;
+  color: rgb(46, 43, 43);
+  margin-right: -5px;
+}
+
+.cri1 {
+  background-color: #feeef1;
+}
+
+.cri2 {
+  background-color: #fff3e7;
+}
+
+.cri3 {
+  background-color: #eaf5f4;
+}
+
+.cri4 {
+  background-color: #e8e7f4;
+  color: #303b59;
+}
+
+.fade {
+  color: lightslategrey;
+}
+
+.continue-btn {
+  display: inline-block;
+  width: 80%;
+  height: 3rem;
+  background: #303b59;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  border: none;
+  border-radius: 2em;
+  display: block;
+  /* margin: auto; */
+  margin: 30px auto;
+  box-shadow: 1px 1px 5px grey;
+}
+
+.continue-btn:hover {
+  background: linear-gradient(#6742ff, #342dea);
+  box-shadow: 1px 1px 5px #6742ff;
+}
+
+.turn_on {
+  display: none;
+}
+
+/* FOR laptop */
+
+@media screen and (min-width: 1024px) {
+  #Desktop {
+    width: 60vw;
+    height: 70vh;
+    margin: auto;
+    margin-top: 8%;
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px lightgray;
+  }
+
+  .des_side1 {
+    width: 50%;
+    height: 100%;
+  }
+
+  .des_side2 {
+    width: 50%;
+    height: 100%;
+    margin-right: 5px;
+  }
+
+  .mobile_circle > p {
+    font-size: 1rem;
+  }
+
+  .mobile_upper_part {
+    height: 100%;
+    border-radius: 30px;
+  }
+
+  .mobile_upper_part > h4 {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .mobile_circle {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 1.5rem;
+  }
+
+  .great {
+    margin: 1rem auto 0.5em;
+    font-size: 1.25rem;
+  }
+
+  .score_statement {
+    margin-top: 0.625rem;
+    font-size: 1.125rem;
+    word-spacing: 2px;
+    list-style: 1.8rem;
+  }
+
+  .turn_on {
+    display: inline;
+  }
+
+  .turn_off {
+    display: none;
+  }
+
+  .mobile_circle > h3 {
+    margin-top: 1.25rem;
+  }
+
+  .criteria {
+    height: 2.5rem;
+  }
+
+  .summary {
+    margin-left: 2.25rem;
+    margin-top: 2rem;
+  }
+}
+
+/* LArger screen size */
+@media screen and (min-width: 1440px) {
+  .mobile_upper_part > h4 {
+    margin-top: 4rem;
+  }
+
+  .mobile_circle {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2rem;
+  }
+
+  .mobile_circle > h3 {
+    font-size: 3.5rem;
+    margin-top: 1.8rem;
+  }
+
+  .mobile_upper_part > h4 {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+  }
+
+  .mobile_circle > p {
+    font-size: 1.5rem;
+  }
+
+  .great {
+    margin: 1.5rem auto 0.5em;
+    font-size: 1.5rem;
+  }
+
+  .score_statement {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    word-spacing: 2px;
+    line-height: 2rem;
+  }
+
+  .criteria {
+    height: 3.5rem;
+  }
+
+  .summary {
+    margin-left: 2.5rem;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+  }
+
+  .criteria > h {
+    font-size: 1.5rem;
+  }
+
+  .criteria > img {
+    width: 2rem;
+  }
+
+  .continue-btn {
+    height: 3.5rem;
+    font-size: 1.5rem;
+    box-shadow: 0px 2px 10px grey;
+  }
+}
